@@ -10,6 +10,7 @@ class DataFile:
         """ shows the number of rows in the data we key in """
         rows = len(self.data) if self.data else "not loaded"
         return f"File: {self.filepath} | Rows: {rows}"
+        
     
     def __repr__(self):
         """Returns the information about the DataFile
@@ -24,6 +25,5 @@ class DataFile:
 test= DataFile("top100_ai_tools_2026.csv")
 
 print(test)
-
 
     
