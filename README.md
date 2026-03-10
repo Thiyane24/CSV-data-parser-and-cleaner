@@ -7,6 +7,7 @@ structured data from multiple file formats.
 ## Project Structure
 
 project-01-data-parser/
+
 ├── data_parser/
 
 │   ├── __init__.py
