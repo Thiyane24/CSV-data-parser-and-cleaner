@@ -8,14 +8,22 @@ structured data from multiple file formats.
 
 project-01-data-parser/
 ├── data_parser/
+
 │   ├── __init__.py
-│   ├── base.py        # DataFile base class
-│   ├── csv_file.py    # CSVFile subclass
-│   ├── json_file.py   # JSONFile subclass
-│   └── tsv_file.py    # TSVFile subclass
-├── data/              # Sample datasets
-├── output/            # Cleaned output files
-└── test_parser.py     # Integration tests
+
+│   ├── base.py   
+
+│   ├── csv_file.py 
+
+│   ├── json_file.py 
+
+│   └── tsv_file.py
+
+├── data/        
+
+├── output/     
+
+└── test_parser.py     
 
 ## Features
 
