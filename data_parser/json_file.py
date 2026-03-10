@@ -1,4 +1,4 @@
-from base import DataFile
+from data_parser.base import DataFile
 import json
 
 class JSONFile(DataFile):
@@ -20,7 +20,4 @@ class JSONFile(DataFile):
         with open(output_path, "w") as write:
             json.dump(self.data,write, indent= 2)
                     
-test2 = JSONFile("data/top_100_ai_tools_2026.json")
-
-test2.read()
-test2.write("top_100_ai_tools_2026.json")    
+   

@@ -1,4 +1,4 @@
-from base import DataFile
+from data_parser.base import DataFile
 import csv
 
 class CSVFile (DataFile):
@@ -23,7 +23,7 @@ class CSVFile (DataFile):
             writer.writerows(self.data)         
             
             
-test1 = CSVFile("data/my_file (1).csv")
+test1 = CSVFile("data/file.tsv")
 
 test1.read()
-test1.write("my_file (1).csv")   
+test1.write("file.tsv")   
