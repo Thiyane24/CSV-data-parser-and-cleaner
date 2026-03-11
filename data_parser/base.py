@@ -23,6 +23,7 @@ class DataFile:
         raise NotImplementedError("Subclasses must implement read")
     
     def validate(self):
+        """validates the data to see if it is not empty and None"""
         if self.data == None:
             return False
         if len(self.data) == 0:
@@ -31,6 +32,7 @@ class DataFile:
         return True
     
     def clean(self):
+        """Cleans the data by removing whitespaces, making it snake_case and lower case"""
         for row in self.data :
             for key, value in row.items():
                 if isinstance(value,str):
