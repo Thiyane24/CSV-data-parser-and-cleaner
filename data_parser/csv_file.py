@@ -3,7 +3,7 @@ import csv
 
 class CSVFile (DataFile):
     """ Initiates the class, with the parameters below and inherits from the DataFile class and takes attribute 'filepath' """
-    def __init__(self,filepath, delimiter = ';' ):
+    def __init__(self,filepath, delimiter = ',' ):
         super().__init__(filepath)
         self.delimiter = delimiter
         
